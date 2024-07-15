@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	<title> Rainbow_cat OJ </title>
+</head>
+<body class="background">
+	<div class="head">
+		<a class="headtitle" href = "./">
+			Rainbow_cat OJ
+		</a>
+		<a class="text" href = "./problemlist">
+			题目列表
+		</a>
+		<a class="text" href = "./submit">
+			提交
+		</a>
+		<a class="text" href = "./about">
+			关于
+		</a>
+		<div id="dateTime" class="naver-time" style="line-height: 3rem; font-size: 1.7rem; font-family: 'Proxy 1'; font-weight: 500; color: #FFFFFF; position: absolute; left: 75%;"></div>
+			<script>
+				Date.prototype.format = function (fmt) {
+					var o = {
+						"y+": this.getFullYear, //年
+						"M+": this.getMonth() + 1, //月份
+						"d+": this.getDate(), //日
+						"h+": this.getHours(), //小时
+						"m+": this.getMinutes(), //分
+						"s+": this.getSeconds() //秒
+					};
+					if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+					for (var k in o)
+						if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+					return fmt;
+				}
+				setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy年MM月dd日 hh:mm:ss');", 1000);
+			</script>
+		</div>
+	<div class="textbl">
+		<iframe src="D:\\Judge\\result\\result1.txt" name=iframe1 width="500px" height="500px"></iframe>
+		<div id=div1></div>
+		<script>
+			var txtval=ifram1.body.innerText;
+			div1.innerHTML=txtval;
+		</script>
+	<div>
+	<p class="about"> Powered by Rainbow_cat OJ </p>
+</body>
+</html>

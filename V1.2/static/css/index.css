@@ -1,0 +1,79 @@
+.background{
+    background-image: url("https://qinym-d.github.io/images/wallhaven-wqery6-light.webp");
+    background-size: cover; 
+}
+.head {
+	display: block;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 4em;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,191,255, 0);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(255,255,255,0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+}
+.headtitle {
+	display: block;
+	margin: 10px;
+	font-size: 24px;
+	font-family: 'Proxy 1';
+	text-decoration: none;
+	color: darkturquoise;
+}
+.text {
+	display: block;
+	margin: 10px;
+	font-size: 2rem;
+	font-family: '华文仿宋';
+	text-decoration: none;
+	color: white;
+}
+.ttext {
+	display: block;
+	margin: 10px;
+	font-size: 2rem;
+	position: relative;
+    left: 15.4%;
+	font-family: '华文仿宋';
+	text-decoration: none;
+	color: black;
+}
+.textbl {
+	position: relative;
+	top: 4em;
+	width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; 
+    background-color: rgba(255,255,255,0.7);
+}
+.pic {
+	position: relative;
+    left: 15.4%;
+    top: 1em;
+   	border-radius: 10px;
+}
+.entext {
+	display: block;
+	font-family: 'Proxy 1';
+	position: relative;
+	left: 33%;
+	color: black;
+}
+.about {
+	font-family: 'Proxy 1';
+	font-size: 18px;
+	position: relative;
+	color: darkturquoise;
+	top: 4em;	    	
+}
